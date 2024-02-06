@@ -1,0 +1,5 @@
+module.exports = {
+    TWO_DAYS_IN_MS: 2 * 86400000,
+    THREE_DAYS_IN_MS: 3 * 86400000,
+    SCRAPER_REFRESH_DURATION_IN_MS: 2 * 86400000,
+}

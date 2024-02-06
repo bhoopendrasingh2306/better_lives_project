@@ -1,0 +1,435 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* .search-div1{
+  
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  border: dotted;
+
+} */
+
+/* .nav-router > :first-child {
+  margin-top: -100px;
+  position: absolute;
+} */
+
+.nav-ul{
+  height: 41px;
+  width: 100%;
+  background-color: transparent;
+  justify-content:right;
+  display: flex;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  z-index: 1;
+  position: relative;
+  
+}
+
+
+.nav-ul > :first-child{
+  /* align-self: left; */
+  flex: 2;
+}
+
+.nav-ul li{
+  list-style-type: none;
+  float: right;
+  padding: 10px;
+  margin: 0;
+  
+}
+
+.nav-ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* search css */
+/* .search-div1{
+  height: 580px;
+
+} */
+
+/* explore css */
+
+.explore-div1{
+  width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3,1fr); 
+}
+
+.explore-div1 a{
+  text-decoration: none;  
+}
+
+.card{
+  margin-left: 38px ;
+  margin-top: 20px;
+  
+}
+
+/* compare css */
+/* .compare-div1{
+  background-image: url("./images/pexels-nubia-navarro-\(nubikini\)-386000.jpg");
+ 
+  border: dotted;
+} */
+
+
+
+/* home page css */
+.home-div1{
+  /* background-image: url("./images/pexels-asad-photo-maldives-1268855.jpg"); */
+  width: 100%;
+  height: 590px;
+  background-size: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#explore-btn{
+  position: absolute;
+  margin-top: 23%;
+  left: 25%;
+  background: linear-gradient(90deg, aqua, rgb(183, 241, 241));
+  width: 10em;
+  height: 3em;
+  opacity: 1;
+  box-shadow: none;
+  font-size: 1em;
+  
+}
+
+#search-bar{
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 1px;
+  position: relative;
+  margin-top: 10em;
+  left: 30em;
+  z-index: 5;
+}
+
+#explore-btn:hover{
+  background: linear-gradient(90deg, rgb(174, 239, 239), aqua);
+  opacity: 0.7;
+}
+
+.landing-img{
+  background-image: url("./images/newbg.png");
+
+   height: 100%; 
+
+  margin-top: -73px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.landing-img2{
+  /* background-image: url("./images/imag2.jpg"); */
+  /* background-color:rgb(121, 211, 211); */
+  /* margin-left: 45%; */
+  
+   /* Full height */
+   height: 50%; 
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.madeby{
+position: absolute;
+margin-top: 42%;
+margin-left: 5%;
+font-style: italic;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+font-size: large;
+}
+
+.landing-text{
+position: absolute;
+margin-top: 10%;
+margin-left: 10%;
+font-style: italic;
+font-size: 40px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-shadow: #282c34;
+}
+
+.landing-subtext{
+  position: absolute;
+margin-top: 17%;
+margin-left: 10%;
+font-style: italic;
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-shadow: #282c34;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* pemplate css */
+
+.weather{
+  background-image: url("../src/images/wether.jpg");
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+   
+}
+
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .press-humid {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 37px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather-kind {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+
+/* formcontrol css */
+
+.formcontrol{
+  align-items: center;
+  
+  margin-left: -300px !important;
+  
+}
+
+.feelslike{
+  font-size: 25px;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hospital-location{
+  font-size: large;
+  color: red;
+}
+
+/* hospital css */
+
+.hospital{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+.health-div1{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.healthi{
+  background-image: url(../src/images/26363.jpg);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+}
+
+
+
+/* education css */
+
+.education-div1 {
+  display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+.educationi{
+  background-image: url(../src/images/univbg.jpg);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+}
+
+/*  tourism css */
+
+.tourismi{
+  background-image: url(../src/images/tourism2.jpg);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+}
+
+
+/* front page card css */
+
+.slider-frame{
+  overflow: hidden;
+  height: 400px;
+  width: 600px;
+  margin-left: 480px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+
+@keyframes slide_animation{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:600px;}
+  30% {left:600px;}
+  40% {left: 1200px;}
+  50% {left: 1200px;}
+  60% {left: 600px;}
+  70% {left: 600px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left:0px;}
+}
+
+@-webkit-keyframes slide_animation{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:600px;}
+  30% {left:600px;}
+  40% {left: 1200px;}
+  50% {left: 1200px;}
+  60% {left: 600px;}
+  70% {left: 600px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left:0px;}
+}
+
+.slide-images{
+  width: 60px;
+  height: 30px;
+  margin: 0 0 0 -600px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  animation-name: slide_animation;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.img-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.img-container img{
+  height: 700%;
+  width: 600%;
+}
